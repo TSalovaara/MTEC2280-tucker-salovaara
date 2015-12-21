@@ -1,0 +1,32 @@
+import serial
+ser = serial.Serial("/dev/ttyS0",9600)
+print(ser.name)
+state = 0
+while(True):
+    if state == 0
+    command = input("start to begin")
+    if command == "start"
+
+        print(command)
+        print("The game is about to begin, listen carefully to the notes")
+        state = 1
+    if state == 1
+        print("these are sound A, B and C")
+        command = command.strip()
+        message = "start" + "\n"
+        message = start.encode()
+        ser.write(message) 
+        state = 2
+    if state == 2 
+        command = input("What is the third note?")
+    	if command == "A" && command == "B"
+    		command = command.strip()
+    		message = "lose" + "\n"
+    		message = lose.encode()
+        	ser.write(command)
+	    if command == "C"command
+	        command = command.strip()
+       	    message = "win" + "\n"
+      	    message = win.encode()
+            ser.write(message)
+ser.close()
